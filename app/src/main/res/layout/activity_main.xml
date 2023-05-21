@@ -74,7 +74,8 @@
             android:layout_marginRight="40dp"
             android:layout_weight="1"
             android:ems="5"
-            android:gravity="right"
+            android:gravity="center"
+            android:hint="TM"
             android:inputType="phone"
             android:numeric="signed|decimal" />
 
@@ -86,6 +87,8 @@
             android:layout_marginRight="40dp"
             android:layout_weight="1"
             android:ems="5"
+            android:gravity="center"
+            android:hint="AGL"
             android:inputType="phone" />
     </LinearLayout>
 
@@ -141,7 +144,8 @@
             android:layout_marginRight="40dp"
             android:layout_weight="1"
             android:ems="5"
-            android:gravity="right"
+            android:gravity="center"
+            android:hint="TM"
             android:inputType="phone" />
 
         <EditText
@@ -152,31 +156,36 @@
             android:layout_marginRight="40dp"
             android:layout_weight="1"
             android:ems="5"
+            android:gravity="center"
+            android:hint="AGL"
             android:inputType="phone" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnCalcular"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:fontFamily="@font/inter_bold"
+        android:stateListAnimator="@android:anim/accelerate_decelerate_interpolator"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
         android:id="@+id/vResultado"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="350dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:textAlignment="center"
         android:paddingTop="50dp"
-        android:text="Funciona"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:visibility="visible"
@@ -185,6 +194,19 @@
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/btnAcercaDe"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de"
+        app:layout_constraintBottom_toTopOf="@+id/vResultado"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        app:layout_constraintVertical_bias="0.22000003" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

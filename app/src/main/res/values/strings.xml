@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Calculo Acidez v1</string>
+
+    <string name="textoAbout"><big>Aplicacion Calculo version 1.001 \n \n</big>
+        <i>Esta Aplicacion devuelve el valor de acidez final de un tanque de aceite luego de una mezcla\n\n</i>
+    <big>La App calcula de la siguiente manera:  \n \n</big>
+    <b>1.</b>Se suman las TM obtenidas del primer y segundo tanque.\n
+   <b>2.</b>Se multiplica las Tm obtenidas del tanque #1 y la acidez obtenida del tanque #1. Se realiza la misma Operacion con el tanque #2 respectivamente\n
+   <b>3.</b>Se suman los resultados de la Operacion anteror\n
+   <b>4.</b>Se dividen el resultado de la suma anterior entre la suma del primer paso y asi se obtiene la acidez \n \n
+        <i><b>((toneladas1*acidez1)+(toneladas2*acidez2))/(tonelada1+tonelada2)\n \n</b></i>
+         <big>App Creada por </big> <big><b><i>Lenzon Eduardo Castillo</i></b></big>
+    </string>
 </resources>
