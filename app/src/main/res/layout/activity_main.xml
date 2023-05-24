@@ -177,6 +177,7 @@
         app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
+        android:text="Ninguna Operacion Realizada"
         android:id="@+id/vResultado"
         android:layout_width="0dp"
         android:layout_height="350dp"
